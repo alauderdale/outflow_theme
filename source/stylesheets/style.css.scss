@@ -535,9 +535,6 @@ section{
     background-color:$light-gray-color;
     border-bottom:1px solid $gray-color;
     .stat-circ{
-      background:url(../images/stat_circ.png) no-repeat;
-      width:197px;
-      height:197px;
       h1{
         font-size:4em;
       }
@@ -577,7 +574,7 @@ footer{
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 780px) {
 
   .navbar{
     padding:$baseline/6;
@@ -590,6 +587,10 @@ footer{
       margin-bottom:$baseline!important;
     }
   }
+
+    .stat{
+      text-align:center;
+    }
 
 }
 

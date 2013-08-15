@@ -1,0 +1,39 @@
+%section.contact#contact
+	.container
+		.row
+			.col-lg-12
+				.text-center.margin-bottom
+					%h1.jumbo-text.no-margin-bottom
+						Get in Touch
+					%p.extra-bold-font-name
+						We'd love to hear from you.
+					=image_tag('map_placeholder.png', :class=>"full-width-image")
+				.row
+					.col-lg-5
+						%form.form-horizontal{:role => "form"}
+						%fieldset
+							.form-group
+								%label
+									Name:
+								%input.form-control{:placeholder => "Enter email", :type => "text"}
+							.form-group
+								%label
+									Email:
+								%input.form-control{:placeholder => "Enter email", :type => "text"}
+							.form-group
+								%label
+									your Message:
+								%textarea.form-control{:placeholder => "Enter email", :type => "text", :rows=>"10"}
+							%button.btn.btn-primary.btn-lg.btn-block.margin-bottom{:type => "submit"} 
+								Submit
+					.col-lg-5.col-lg-offset-2
+						%h2
+							Contact info
+						%p
+							Cras ac elementum tortor, id interdum diam. Proin convallis est erat, pharetra feugiat ligula gravida sed. Suspendisse eu ultricies sem. Vestibulum porttitor purus at libero posuere, aliquam faucibus ligula dignissim.
+						%p
+							123 Sunset Blvd, Atlanta, GA
+							%br
+							(123) 456-7890
+							%br
+							(123) 456-7890

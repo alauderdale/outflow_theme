@@ -1,3 +1,21 @@
+:javascript
+	$(document).ready(function(){
+		
+		$('body').pageScroller({
+			navigation: '#nav',
+			animationSpeed: 1900
+		});
+
+		$('a').click(function(){
+		$('html, body').animate({
+		scrollTop: $( $.attr(this, 'href') ).offset().top
+		}, 1900);
+		return false;
+		});
+
+
+	});
+
 =partial"hero"
 =partial"icons"
 =partial"mission"

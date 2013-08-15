@@ -154,7 +154,7 @@ h6 { font-size: 0.9em; line-height:$baseline;}
 
 h1{
   &.jumbo-text{
-    font-size:4em;
+    font-size:3.8em;
     line-height:$baseline*3;
   }
 }
@@ -436,6 +436,14 @@ a{
   &:hover{
     text-decoration:none;
   }
+  &.down-arrow{
+    color:white;
+    font-size:5em;
+    @include transition-duration(.3s);
+    &:hover{
+      color:$primary-color;
+    }
+  }
 }
 
 //buttons
@@ -459,7 +467,7 @@ a{
 //header
 
 .navbar{
-  padding:$baseline/2 0;
+  padding:$baseline/2 $baseline;
   background:#000;
   ul.navbar-nav{
     li{
@@ -503,23 +511,13 @@ a{
 
 
 section{
-  padding:$baseline*3 0;
+  padding:$baseline*4 0;
   &.hero{
     background: url(../images/hero_city.png) no-repeat center 0px fixed; 
     @include background-size(cover);
     background-color:$black-color;
     h1{
       color:white;
-    }
-    a{
-      &.down-arrow{
-        color:white;
-        font-size:5em;
-        @include transition-duration(.3s);
-        &:hover{
-          color:$primary-color;
-        }
-      }
     }
   }
   &.mission{
@@ -529,7 +527,7 @@ section{
     p{
       color:white;
     }
-    background: url(../images/city_grid_bg.png) no-repeat center 0px fixed; 
+    background: url(../images/city_grid_bg.png) repeat-y center 0px fixed; 
     @include background-size(cover);
     background-color:$black-color;
   }
@@ -578,14 +576,20 @@ footer{
 //bootstrap overrides
 
 
-// /* Extra small devices (phones, up to 480px) */
-// /* No media query since this is the default in Bootstrap */
 
-// /* Small devices (tablets, 768px and up) */
-// @media (min-width: @screen-tablet) {  }
+@media (max-width: 700px) {
 
-// /* Medium devices (tablets, 992px and up) */
-// @media (min-width: @screen-desktop) {  }
+  .navbar{
+    padding:$baseline/6;
+  }
 
-// /* Large devices (large desktops, 1200px and up) */
-// @media (min-width: @screen-large-desktop) {  }
+  h1{
+    &.jumbo-text{
+      font-size:3em;
+      line-height:$baseline*2;
+      margin-bottom:$baseline!important;
+    }
+  }
+
+}
+

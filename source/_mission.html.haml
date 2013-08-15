@@ -1,4 +1,4 @@
-%section.mission#mission
+%section.section.mission#mission{:'data-speed' => "3", :'data-type' => "background"}
 	.container
 		.row
 			.col-lg-12
@@ -9,7 +9,7 @@
 							=image_tag('mark.png', :class=>"margin-bottom", :width=>"135") 
 							%h1.jumbo-text.half-margin-bottom
 								Our Mission
-							%a.btn.btn-primary.btn-lg.margin-bottom
+							%a.btn.btn-primary.btn-lg.margin-bottom{:href=>"donate.html"}
 								Give to Our Cause
 							%p.extra-bold-font-name.half-margin.bottom
 								Cras ac elementum tortor, id interdum diam. 
@@ -17,4 +17,6 @@
 									Proin convallis est erat 
 							%p
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget imperdiet augue. Praesent non egestas massa, in facilisis erat. Mauris in orci nec tellus mattis volutpat nec id magna. Vestibulum 
+							%a.down-arrow{:href=>"#stats"}
+								%i.icon-circle-arrow-down
 					.col-lg-1

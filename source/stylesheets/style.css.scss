@@ -460,7 +460,7 @@ a{
 
 .navbar{
   padding:$baseline/2 0;
-  background:$black-color;
+  background:#000;
   ul.navbar-nav{
     li{
       font-family:$bold-font-name;
@@ -493,8 +493,7 @@ a{
   a{
     &.logo{
       width:39px;
-      height:36px;
-      background-image:url(../images/logo_small.png);
+      background:url(../images/logo_small.png) no-repeat;
       display:block;
       position:relative;
       top:4px;
@@ -518,7 +517,7 @@ section{
         font-size:5em;
         @include transition-duration(.3s);
         &:hover{
-          color:rgba(255,255,255,.5);
+          color:$primary-color;
         }
       }
     }

@@ -534,12 +534,25 @@ section{
   &.stats{
     background-color:$light-gray-color;
     border-bottom:1px solid $gray-color;
-    .stat-circ{
-      h1{
-        font-size:4em;
+  }
+  .stats-container{
+    margin:0 auto;
+    display:block;
+    ul{
+      text-align:center;
+      margin-bottom:-$baseline;
+      li{
+        margin-bottom:$baseline;
+        &:first-of-type{
+          margin-left:$baseline*3;
+        }
+        &:nth-child(odd){
+          margin-right:$baseline;
+        }
       }
     }
   }
+
 }
 
 footer{
@@ -587,10 +600,24 @@ footer{
       margin-bottom:$baseline!important;
     }
   }
+}
 
-    .stat{
-      text-align:center;
+
+@media (max-width: 990px) {
+
+  .stats-container{
+    ul{
+      li{
+        margin-bottom:$baseline;
+        &:first-of-type{
+          margin-left:0!important;
+        }
+        &:nth-child(odd){
+          margin-right:0!important;
+        }
+      }
     }
+  }
 
 }
 

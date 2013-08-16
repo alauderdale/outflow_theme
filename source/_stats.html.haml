@@ -2,20 +2,28 @@
 	.container
 		.row
 			.col-lg-12
-				-2.times do
-					.row.double-margin-bottom
-						-2.times do
-							.col-xs-6.col-sm-6.col-md-6.col-lg-6.margin-bottom
-								.row
-									.stat
-										.col-xs-6.col-sm-6.col-md-6.col-lg-6
-											=image_tag('stat_circ.png')
-										.col-xs-6.col-sm-6.col-md-6.col-lg-6
-											%h3.margin-top
-												Companies
-											%p.lead.primary-text-color
-												&nbsp; providing 
-												%br
-												&nbsp; &nbsp; chairity not 
-												%br
-												&nbsp; &nbsp; &nbsp;choice
+				.row.triple-padding-bottom
+					.col-lg-1
+					.col-lg-10
+						.text-center
+							%h1.jumbo-text
+								We've Shown Whats Possible
+							%p.extra-bold-font-name.lead
+								But theres still lots more to do
+					.col-1
+				.row
+					.stats-container
+						%ul.list-inline
+							-4.times do
+								%li
+									.col-xs-6.col-sm-6.col-md-6.col-lg-6
+										=image_tag('stat_circ.png', :width=>"180px")
+									.col-xs-6.col-sm-6.col-md-6.col-lg-6
+										%h3.margin-top
+											Companies
+										%p.lead.primary-text-color
+											providing 
+											%br
+											chairity not 
+											%br
+											choice

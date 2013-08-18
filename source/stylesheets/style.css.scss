@@ -583,8 +583,25 @@ section{
         }
       }
     }
+    .donate-logo-background{
+      width:257px;
+      height:257px;
+      background:url(../images/donate_logo.png);
+      text-align:center;
+      margin:0 auto;
+      position:relative;
+      bottom:420px;
+      margin-bottom:-420px;
+    }
   }
 
+}
+
+.footer-image{
+  .container{
+    height:108px;
+    background:url(../images/footer_bg.png)no-repeat right 0;
+  }
 }
 
 footer{

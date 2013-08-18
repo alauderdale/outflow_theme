@@ -513,7 +513,7 @@ a{
 section{
   padding:$baseline*4 0;
   &.hero{
-    background: url(../images/hero_city.png) no-repeat center 0px fixed; 
+    background: url(../images/hero_city.png) no-repeat center top fixed; 
     @include background-size(cover);
     background-color:$black-color;
     h1{
@@ -548,6 +548,38 @@ section{
         }
         &:nth-child(odd){
           margin-right:$baseline;
+        }
+        h1.number{
+          position:relative;
+          text-align:center;
+          top:-115px;
+          left:10px;
+          font-size:5em;
+          margin-bottom:-50px;
+        }
+      }
+    }
+  }
+  &.donate_infographic{
+    ul.donate_infographic_blocks{
+      text-align:center;
+      margin:0;
+      li{
+        text-align:left;
+        background-color:$light-gray-color;
+        width:300px;
+        margin:0 0 10px 0;
+        &:nth-child(odd){
+          margin-right:10px;
+        }
+        &:nth-child(even){
+          text-align:right;
+        }
+        &:nth-child(1),&:nth-child(2){
+          padding-bottom:$baseline*4!important;
+        }
+        &:nth-child(3),&:nth-child(4){
+          padding-top:$baseline*4!important;
         }
       }
     }
